@@ -52,7 +52,6 @@ int[,] matrix = InitMatrix(m, n);
 
 Console.WriteLine("Матрица:");
 PrintMatrix(matrix);
-
 bool existNum = false;
 
 //проверять числа массива до тех пор пока не будет сопадения
@@ -63,7 +62,6 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         if (matrix[i, j] == findNumber)
         {
             existNum = true;
-            break;
         }
     }
 }
@@ -81,5 +79,4 @@ for (int i = 0; i < matrix.GetLength(0); i++)
             Console.WriteLine($"Искомое число находится на позиции строка: {i + 1} и столбец: {j + 1}");
         }
     }
-break;
 }
